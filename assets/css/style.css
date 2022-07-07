@@ -381,9 +381,11 @@ header .logo img {
     height: 100px;
     margin-top: 20px;
     margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 32px;
     transition: 0.5s;
     justify-content: center !important;
-    height: 100px;
     weight: 245px;
 }
 
