@@ -364,6 +364,12 @@ header .logo img {
 .button-box {
     display: flex;
     align-items: center;
+    position: relative;
+    height: 100px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    justify-content: center !important;
 }
 
 
