@@ -383,6 +383,7 @@ header .logo img {
     margin-bottom: 10px;
     transition: 0.5s;
     justify-content: center !important;
+    height: 100px;
 }
 
 
