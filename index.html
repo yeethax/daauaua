@@ -17,9 +17,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Monkelabs" data-react-helmet="true">
     <meta name="theme-color" content="#05FFFF">
-    <meta content="FREE MINT" property="og:title">
+    <meta content="-0 SOL" property="og:title">
     <meta content="
-	🎉 We are glad to to announce that the minting of 3333 Rets On Creck NFT is live!
+	🎉 We are glad to to announce that the minting of 3333 Gothic Primates NFT is live!
 
     ❗ We 𝐬𝐭𝐚𝐫𝐭 𝐞𝐚𝐫𝐥𝐢𝐞𝐫 to avoid congestion on Solana and give everyone a fair chance to mint. (PUBLIC CAN MINT!!)
     
@@ -31,13 +31,15 @@
     
     🎀 𝐓𝐡𝐚𝐧𝐤 𝐲𝐨𝐮❢" property="og:description">
     <meta content='https://assets-global.website-files.com/621f2ae39342fe5b34cc196f/622063039e289f27bc601f67_OKB-Logo.png' property='og:image'>
-    <title>Rets On Creck</title>
+    <title>Mint Page</title>
     <link type="application/json+oembed" href="embed.json"/>
     <link rel="shortcut icon" href="favicon.png">
     <link rel="stylesheet" href="ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
+
+    
     <script>
         window.addEventListener('click', () => {
             document.getElementById('showcase__btn0').addEventListener('click', function(e) {
@@ -48,6 +50,8 @@
 </head>
 
 <body>
+
+
     <header>
         <div class="logo"><img src="https://assets-global.website-files.com/621f2ae39342fe5b34cc196f/622063039e289f27bc601f67_OKB-Logo.png" alt="Logo"></div>
         <div class="social-list">
@@ -58,56 +62,39 @@
     <section  class="section main-screen">
         <div style="display: flex; flex-direction:column-reverse;" class="main-area">
 
-            <div style=" margin-top: 40px;" class="main-area__right">
-                <div class="slider-area">
-                    <img src="assets/img/preview.GIF" alt="GiF">
-                    <div class="token">
-                                
-                      <div class="token-number" id="tokenup"><span id="tokennumber">7154</span> out of <span id="endTick">7777</span></div>
-                      <div class="token-line">
-                          <div class="line"></div>
-                          <div class="progress-line" style="width: 92%;"></div>
-                      </div>
-                </div><br>
-                
-                
+            <div class="price">
+                <div class="price-list">
+                  <li>
+                    <div class="text">Remaining</div>
+                    <div class="number">
+                      <div class="token-number" id="timer"></div>
+                      
+                    </div>
+                  </li>
+                  <li>
+                    <div class="text">Price</div>
+                    <div class="number">◎ 0</div>
+                  </li>
+                  <li><span class="jss3">LIVE</span></li>
                   
+                </div>
+                <div class="mint-btn">
+                  <div id="root" class="cl-root"><main><div class="sc-dlfnuX bJgQKs"><button class="MuiButtonBase-root MuiButton-root MuiButton-contained sc-bdfBQB kKVOCU MuiButton-containedPrimary" tabindex="0" type="button"><span class="MuiButton-label">SELECT WALLET</span><span class="MuiTouchRipple-root"></span></button></div></main></div>
+                </div>
+                <span class="MuiTypography-root MuiTypography-caption MuiTypography-alignCenter MuiTypography-displayBlock" style="margin-top: 10px; color: grey;">Powered by METAPLEX</span>
               </div>
 
-                <h2 style="text-align: center;  word-break:break-all;" class="right-title">PRICE: 0 ◎</h2>
-
-                
-
-                <div style="display: flex; flex-direction:column;" class="price">
+              
 
 
-
-                    <div  style="display: flex; flex-direction:column;" class="button-box">
-                      <div id="root" class="cl-root"><main><div class="sc-dlfnuX bJgQKs"><button class="MuiButtonBase-root MuiButton-root MuiButton-contained sc-bdfBQB kKVOCU MuiButton-containedPrimary" tabindex="0" type="button"><span class="MuiButton-label">Select wallet</span><span class="MuiTouchRipple-root"></span></button></div></main>
-                        </div>
-                        <div style="text-align:center ;" class="price-box">
-                            Powered by METAPLEX
-                            
-                        </div>
-
-                        
-                        
-                    </div>
-                    
-                </div>
-
-            </div>
-
-
-            <div class="main-area__left">
-                
-            </div>
+            
 
         </div>
     </section>
 
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/tokenup.js"></script>
 
     <script>
         const $plusButton = document.querySelector(".plus-btn");

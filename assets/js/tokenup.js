@@ -1,26 +1,23 @@
-let staticNumber = +document.querySelector('#tokennumber').textContent;
+var interval = 100000;
 
-document.querySelector('#tokennumber').textContent = localStorage.getItem('tokennumber');
+function reset()
+{
+    localStorage.endTime = +new Date + interval;
+}
 
-let timerId = setTimeout(function tick() {
-    let tokennumbercontent = document.querySelector('#tokennumber');
-    let tokennumber = localStorage.getItem('tokennumber') || staticNumber;
-    let randomNumber = Math.floor(Math.random() * 10);
-    let number = +tokennumber + +randomNumber;
-    let endTickNumber = +document.querySelector('#endTick').textContent;
-    let endTick = endTickNumber / 100 * 99;
-    let howMaxNumber = Math.round(+tokennumber * 100 / endTickNumber);
+if(!localStorage.endTime)
+{
+    reset();
+}
 
-    // localStorage.clear();
-
-    if (+tokennumber <= endTick) {
-        localStorage.setItem('tokennumber', number)
-        tokennumbercontent.textContent = number;
-
-        document.querySelector(".progress-line").style.width = " " + howMaxNumber + "%";
-
-        timerId = setTimeout(tick, 1300);
-    } else {
-        console.log("end")
+setInterval(function()
+{
+    var remaining = localStorage.endTime - new Date;
+    if( remaining >= 0 )
+    {
+        $('#timer').text( Math.floor( remaining / 382 ) );
+    } else
+    {
+        reset();
     }
 }, 1500);
