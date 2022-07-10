@@ -357,7 +357,16 @@ header .logo img {
     width: 300px;
 }
 
-
+.mintingTitle {
+    color: #ffffff;
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+    font-family: BebasNeue;
+    white-space: nowrap;
+    text-transform: uppercase;
+    width: 100%;
+}
 
 
 .wallet-address {
