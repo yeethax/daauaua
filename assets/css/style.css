@@ -353,9 +353,8 @@ header .logo img {
     background: linear-gradient( 87.22deg, #ff00c7 5.62%, #00ffd1 50.96%, #fff500 98.22% );
     margin-top: 20px;
     margin-bottom: 10px;
-    margin-left: -48px;
     transition: 0.5s;
-    width: 150%;
+    width: 255px;
 }
 
 
