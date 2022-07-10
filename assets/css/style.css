@@ -354,7 +354,7 @@ header .logo img {
     margin-top: 20px;
     margin-bottom: 10px;
     transition: 0.5s;
-    width: 255px;
+    width: 300px;
 }
 
 
@@ -392,7 +392,7 @@ header .logo img {
         width: 200px!important;
     }
     #root button {
-        padding: 0px 25px;
+        padding: 0px 0px;
     }
     .main-screen{
         width: 95%;
