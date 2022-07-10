@@ -3,19 +3,19 @@
 * {
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-family: 'BebasNeue', sans-serif
 }
 
 head {
 
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-family: 'BebasNeue', sans-serif
 
 }
 
 body {
     
     overflow-x: hidden;
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-family: 'BebasNeue', sans-serif;
     background: url("../img/background.png") 0% 0% / cover no-repeat;
     color: rgb(0, 0, 0);
     display: flex;
@@ -99,11 +99,14 @@ header .logo img {
 }
 
 .main-area {
-    width: 444px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
 }
 
 .main-area__left {
-    flex-basis: 100%;
+    flex-basis: 50%;
 }
 
 .main-area__right {
@@ -112,54 +115,7 @@ header .logo img {
     background-color: #0f0f0f;
     padding: 40px 30px;
     backdrop-filter: blur(10px);
-    border-radius: 6px;
-}
-
-.price {
-    background: rgb(21, 26, 31);
-    padding: 24px 24px 10px;
-    border-radius: 8px;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    font-weight: bold;
-    box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
-}
-
-.price-list {
-    display: flex;
-    justify-content: space-between;
-    list-style: none;
-    margin-bottom: 20px;
-}
-
-.price-list li {
-    display: flex;
-    flex-direction: column;
-    padding: 0 12px;
-}
-
-.price-list li .text {
-    font-size: 12px;
-    font-weight: 400;
-    margin-bottom: 10px;
-}
-
-.price-list li .number {
-
-    font-size: 1.25rem;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: bold;
-    line-height: 1.6;
-    letter-spacing: 0.0075em;
-}
-
-.token-number {
-    display: flex;
-    align-items: left;
+    border-radius: 0px;
 }
 
 .left-title {
@@ -190,35 +146,8 @@ header .logo img {
     width: 35%;
     height: auto;
     object-fit: contain;
-    border-radius: 7px;
+    border-radius: 0px;
     margin-bottom: 35px;
-}
-.MuiChip-root {
-    color: #fff;
-    border: none;
-    cursor: default;
-    height: 32px;
-    display: inline-flex;
-    outline: 0;
-    padding: 0;
-    font-size: 0.8125rem;
-    box-sizing: border-box;
-    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    align-items: center;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    white-space: nowrap;
-    border-radius: 16px;
-    vertical-align: middle;
-    justify-content: center;
-    text-decoration: none;
-    background-color: #616161;
-}
-.MuiChip-label {
-    overflow: hidden;
-    white-space: nowrap;
-    padding-left: 12px;
-    padding-right: 12px;
-    text-overflow: ellipsis;
 }
 
 .token {
@@ -257,37 +186,13 @@ header .logo img {
 }
 
 .token-number {
-    font-size: 1.25rem;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: bold;
-    line-height: 1.6;
-    letter-spacing: 0.0075em;
-}
-
-.counter {
-    width: 100px;
-    font: 800 40px system-ui;
-    overflow: hidden;
-  }
-  .numbers {
-    width: auto;
     display: flex;
-    animation: countNumber 4s infinite alternate;
-    animation-timing-function: steps(10);
-  }
-  .numbers div {
-    text-align: center;
-    flex: 0 0 100px;
-  }
-  
-  @keyframes countNumber {
-    0% {
-      margin-left: 0px;
-    }
-    100% {
-      margin-left: -1000px;
-    }
-  }
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 300!important;
+    transform: translateY(-5px);
+}
 
 
 .pre-total {
@@ -408,8 +313,14 @@ header .logo img {
     align-items: center;
 }
 
-.monkey {
-    margin-top: 50px;
+.price {
+    color: #000;
+    margin: 10px 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .join-btn span {
@@ -422,69 +333,27 @@ header .logo img {
     align-items: center;
 }
 #root button {
+    font-family: Bebas Neue;
+    text-transform: uppercase;
     position: relative;
     display: flex;
-    text-transform: uppercase;
-    width: 348px;
-    justify-content: center!important;
     align-items: center;
-    background: linear-gradient( rgb(96, 74, 229) 0%, rgb(129, 62, 238) 100%)!important;
-    border-radius: 6px;
-    font-weight: bold;
-    font-size: 16px;
+    border-radius: 0px;
+    font-weight: 600;
+    font-size: 2.25rem;
     line-height: 32px;
-    color: #fff;
-    padding: 20px 35px;
-    height: 60px;
+    color: #0f0f0f;
+    height: 100px;
     cursor: pointer;
-    transition-duration: .3s;
-    letter-spacing: .5px;
-}
-
-.MuiTypography-caption {
-    font-size: 0.75rem;
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-    font-weight: 400;
-    line-height: 1.66;
-    letter-spacing: 0.02857em;
-    
-}
-
-.MuiTypography-alignCenter {
-    text-align: center;
-    
-}
-
-.MuiTypography-displayBlock {
-    display: block;
-    
-}
-
-.jss3 {
-    color: white;
-    margin: 8px;
-    display: flex;
-    padding: 8px;
-    font-size: 18px;
-    background: #384457;
-    height: 3rem;
-    width: 165px;
-    align-items: center;
-    font-weight: bold;
-    margin-right: 0;
-    align-content: center;
-    border-radius: 5px;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#root button:hover {
-    background: #fff !important;
-    color: #000;
-    backdrop-filter: blur(10px);
-    transform: scale(1.1);
+    transition-duration: 0.3s;
+    justify-content: center !important;
+    background: linear-gradient( 87.22deg, #ff00c7 5.62%, #00ffd1 50.96%, #fff500 98.22% );
+    margin-top: 20px;
+    margin-bottom: 10px;
     transition: 0.5s;
 }
+
+
 
 
 .wallet-address {
