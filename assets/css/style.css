@@ -99,7 +99,7 @@ header .logo img {
 }
 
 .main-area {
-    width: 80%;
+    width: 520px;
     display: flex;
     align-items: center;
     flex-direction: row;
@@ -111,7 +111,7 @@ header .logo img {
 }
 
 .main-area__right {
-    width: 40%;
+    width: 100%;
     border: 5px solid #ffffff;
     padding: 40px;
     position: relative;
