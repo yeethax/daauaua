@@ -99,10 +99,11 @@ header .logo img {
 }
 
 .main-area {
-    width: 100%;
+    width: 80%;
     display: flex;
     align-items: center;
     flex-direction: row;
+    
 }
 
 .main-area__left {
@@ -113,9 +114,10 @@ header .logo img {
     border: 5px solid #ffffff;
     max-width: 550px;
     background-color: #0f0f0f;
-    padding: 40px 30px;
+    padding: 29.6px;
     backdrop-filter: blur(10px);
     border-radius: 0px;
+    
 }
 
 .left-title {
