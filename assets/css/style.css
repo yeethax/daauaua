@@ -342,7 +342,7 @@ header .logo img {
     position: relative;
     display: flex;
     align-items: center;
-    border-radius: 3px;
+    border-radius: 5px;
     font-weight: 600;
     font-size: 2.25rem;
     line-height: 32px;
