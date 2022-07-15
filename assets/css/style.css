@@ -183,7 +183,7 @@ header .logo img {
 .token-line .progress-line {
     position: absolute;
     inset: 0px;
-    background: #0;
+    background: #000;
     height: 5px;
     border-radius: 0px;
 }
